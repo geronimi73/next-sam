@@ -356,6 +356,32 @@ export default function Home() {
               </p>
             </div>
           </CardTitle>
+          <CardDescription className="text-sm text-muted-foreground space-y-1 pt-1">
+            <p>
+              Cut out any object from a photo — entirely in your browser, nothing is uploaded to a server.
+              The model runs locally using{" "}
+              <a
+                href="https://onnxruntime.ai"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-foreground"
+              >
+                ONNX Runtime Web
+              </a>{" "}
+              and Meta's{" "}
+              <a
+                href="https://ai.meta.com/sam2"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-foreground"
+              >
+                SAM2
+              </a>.
+            </p>
+            <p>
+              <strong>How to use:</strong> Upload an image or paste a URL → click <em>Encode image</em> → left-click objects to select, right-click to deselect → download the crop.
+            </p>
+          </CardDescription>
         </CardHeader>
         <CardContent>
           <div className="flex flex-col gap-4">

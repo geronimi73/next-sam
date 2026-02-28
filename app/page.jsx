@@ -29,6 +29,7 @@ import {
   Github,
   LoaderPinwheel,
   Fan,
+  BookOpen,
 } from "lucide-react";
 
 // Image manipulations
@@ -324,7 +325,17 @@ export default function Home() {
   return (
     <div className="flex items-center justify-center min-h-screen bg-background p-4">
       <Card className="w-full max-w-2xl">
-        <div className="absolute top-4 right-4">
+        <div className="absolute top-4 right-4 flex gap-2">
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={() =>
+              window.open("https://medium.com/@geronimo7", "_blank")
+            }
+          >
+            <BookOpen className="w-4 h-4 mr-2" />
+            Blog
+          </Button>
           <Button
             variant="outline"
             size="sm"

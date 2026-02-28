@@ -20,16 +20,15 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import InputDialog from "@/components/ui/inputdialog";
+import HeaderLinks from "@/components/ui/header-links.jsx";
 import { Button } from "@/components/ui/button";
 import {
   LoaderCircle,
   Crop,
   ImageUp,
   ImageDown,
-  Github,
   LoaderPinwheel,
   Fan,
-  BookOpen,
 } from "lucide-react";
 
 // Image manipulations
@@ -325,28 +324,10 @@ export default function Home() {
   return (
     <div className="flex items-center justify-center min-h-screen bg-background p-4">
       <Card className="w-full max-w-2xl">
-        <div className="absolute top-4 right-4 flex gap-2">
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={() =>
-              window.open("https://medium.com/@geronimo7", "_blank")
-            }
-          >
-            <BookOpen className="w-4 h-4 mr-2" />
-            Blog
-          </Button>
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() =>
-              window.open("https://github.com/geronimi73/next-sam", "_blank")
-            }
-          >
-            <Github className="w-4 h-4 mr-2" />
-            View on GitHub
-          </Button>
-        </div>
+        <HeaderLinks
+          githubUrl="https://github.com/geronimi73/next-sam"
+          blogUrl="https://medium.com/@geronimo7"
+        />
         <CardHeader>
           <CardTitle>
             <div className="flex flex-col gap-2">

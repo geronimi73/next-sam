@@ -18,7 +18,7 @@ export default function HeaderLinks({ githubUrl, blogUrl }) {
       )}
       {githubUrl && (
         <Button
-          variant="outline"
+          variant="ghost"
           size="sm"
           onClick={() => window.open(githubUrl, "_blank")}
         >

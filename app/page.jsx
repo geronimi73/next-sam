@@ -322,7 +322,7 @@ export default function Home() {
   }, [mask, image]);
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-background p-4">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-background p-4">
       <Card className="w-full max-w-2xl">
         <HeaderLinks
           githubUrl="https://github.com/geronimi73/next-sam"
@@ -446,6 +446,36 @@ export default function Home() {
         onInput={handleFileUpload} 
         />
       <Analytics />
+      <footer className="mt-8 pb-2 text-center text-xs text-muted-foreground">
+        Powered by{" "}
+        <a
+          href="https://github.com/facebookresearch/sam2"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-foreground"
+        >
+          SAM2
+        </a>{" "}
+        by Meta, licensed{" "}
+        <a
+          href="https://github.com/facebookresearch/sam2/blob/main/LICENSE"
+          target="_blank"
+          rel="license noreferrer"
+          className="underline hover:text-foreground"
+        >
+          Apache 2.0
+        </a>
+        . Built by{" "}
+        <a
+          href="https://geronimo-labs.com"
+          target="_blank"
+          rel="noopener"
+          className="underline hover:text-foreground"
+        >
+          Geronimo Labs
+        </a>
+        .
+      </footer>
     </div>
   );
 }

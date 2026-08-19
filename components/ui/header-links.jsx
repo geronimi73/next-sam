@@ -5,7 +5,7 @@ export default function HeaderLinks({ githubUrl, blogUrl }) {
   if (!githubUrl && !blogUrl) return null;
 
   return (
-    <div className="absolute top-4 right-4 flex gap-2">
+    <div className="flex flex-wrap justify-end gap-2 px-6 pt-4">
       {blogUrl && (
         <Button
           variant="ghost"
